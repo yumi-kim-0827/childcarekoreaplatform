@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import Synchronize from "ol-ext/interaction/Synchronize";
-import Map1 from "@/components/Map1";
-import Map2 from "@/components/Map2";
+import Map1 from "@/components/map/Map1";
+import Map2 from "@/components/map/Map2";
 import "ol-ext/dist/ol-ext.css";
 
 function DualMap() {
