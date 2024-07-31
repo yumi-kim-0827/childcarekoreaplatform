@@ -6,9 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      gap: {
-        base: "10px",
-      },
+      // gap: {
+      //   base: "10px",
+      // },
       colors: {
         "main-color": "#c1c4ff",
       },

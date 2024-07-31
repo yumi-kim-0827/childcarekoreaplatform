@@ -2,12 +2,12 @@ import React from "react";
 //components
 import SideBar from "@/src/components/sidebar/SideBar";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageCalss }) => {
   return (
     <>
-      <div className="flex gap-base">
+      <div className="flex">
         <SideBar />
-        <main className="flex-1">{children}</main>
+        <main className={`${pageCalss} flex-1 grid gap-4`}>{children}</main>
       </div>
     </>
   );
