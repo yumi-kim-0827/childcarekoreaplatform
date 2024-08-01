@@ -5,8 +5,10 @@ import NaverMap from "@/src/components/map/NaverMap";
 import Layout from "@/src/components/layout/Layout";
 import CardShelf from "@/src/components/layout/CardShelf";
 import Section from "@/src/components/layout/Section";
+import LocationTab from "@/src/components/tab/LocationTab";
 
 export default function Home() {
+  const [selectSigun, setSelectSigun] = useState();
   const [list, setList] = useState([]);
 
   const fetchGetData = async () => {
@@ -35,12 +37,13 @@ export default function Home() {
         </CardShelf>
         <CardShelf>
           <Section>
-            <div>
+            <LocationTab />
+            {/* <div>
               <Map style={{ width: "100%", height: 600 }} />
             </div>
             <div>
               <NaverMap />
-            </div>
+            </div> */}
           </Section>
         </CardShelf>
       </Layout>
