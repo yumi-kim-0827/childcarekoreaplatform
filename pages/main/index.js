@@ -37,22 +37,19 @@ export default function Home() {
       <Layout pageCalss="main">
         <CardShelf>
           <Section>
-            <ul>
+            {/* <ul>
               {list?.map((item, id) => {
                 return <li key={id}>{item.craddr}</li>;
               })}
-            </ul>
+            </ul> */}
           </Section>
         </CardShelf>
         <CardShelf>
           <Section>
             <LocationTab onClick={onClickHandler} />
-            {/* <div>
-              <Map style={{ width: "100%", height: 600 }} />
-            </div>
             <div>
-              <NaverMap />
-            </div> */}
+              <NaverMap list={list} />
+            </div>
           </Section>
         </CardShelf>
       </Layout>
