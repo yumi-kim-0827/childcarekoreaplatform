@@ -8,7 +8,6 @@ import Section from "@/src/components/layout/Section";
 import LocationTab from "@/src/components/tab/LocationTab";
 
 export default function Home() {
-  const initialSigunCode = "11680";
   const [list, setList] = useState([]);
 
   //사용자가 시군구를 클릭하면 해당 시군구 코드를 업데이트
@@ -28,10 +27,6 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    fetchGetData(initialSigunCode);
-  }, []);
-  console.log(list);
   return (
     <>
       <Layout pageCalss="main">
