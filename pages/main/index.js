@@ -6,16 +6,20 @@ import Layout from "@/src/components/layout/Layout";
 import CardShelf from "@/src/components/layout/CardShelf";
 import Section from "@/src/components/layout/Section";
 import LocationTab from "@/src/components/tab/LocationTab";
+import TableContainer from "@/src/components/table/TableContainer";
 
 export default function Home() {
+  //지역 선택별 어린이집 리스트 배열 상태관리
   const [list, setList] = useState([]);
+  //사용자가 선택한 어린이집 정보 상태관리
+  const [selectedKider, setSelectedKinder] = useState({});
 
   //사용자가 시군구를 클릭하면 해당 시군구 코드를 업데이트
-  const onClickHandler = (sigunCode) => {
-    fetchGetData(sigunCode);
+  const handleSigunCodeClick = (sigunCode) => {
+    fetchKinderList(sigunCode);
   };
 
-  const fetchGetData = async (sigunCode) => {
+  const fetchKinderList = async (sigunCode) => {
     try {
       const response = await fetch(`/api/getTotalKdList?arcode=${sigunCode}`);
       const data = await response.json();
@@ -25,6 +29,11 @@ export default function Home() {
     } catch (error) {
       console.error(error);
     }
+  };
+
+  //사용자가 선택한 어린이집 객체 정보 업데이트
+  const handleKinderClickOnMap = (item) => {
+    setSelectedKinder(item);
   };
 
   return (
@@ -41,10 +50,13 @@ export default function Home() {
         </CardShelf>
         <CardShelf>
           <Section>
-            <LocationTab onClick={onClickHandler} />
+            <LocationTab onClick={handleSigunCodeClick} />
             <div>
-              <NaverMap list={list} />
+              <NaverMap list={list} onClick={handleKinderClickOnMap} />
             </div>
+          </Section>
+          <Section>
+            <TableContainer data={selectedKider} />
           </Section>
         </CardShelf>
       </Layout>
