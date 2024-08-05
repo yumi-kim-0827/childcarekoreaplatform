@@ -34,7 +34,6 @@ export default function Home() {
   //사용자가 선택한 어린이집 객체 정보 업데이트
   const handleKinderClickOnMap = (item) => {
     setSelectedKinder(item);
-    console.log(item);
   };
 
   return (
