@@ -7,6 +7,7 @@ import CardShelf from "@/src/components/layout/CardShelf";
 import Section from "@/src/components/layout/Section";
 import LocationTab from "@/src/components/tab/LocationTab";
 import TableContainer from "@/src/components/table/TableContainer";
+import SubjectTitle from "@/src/components/layout/SubjectTitle";
 
 export default function Home() {
   //지역 선택별 어린이집 리스트 배열 상태관리
@@ -50,6 +51,10 @@ export default function Home() {
         </CardShelf>
         <CardShelf>
           <Section>
+            <SubjectTitle
+              title="지역별"
+              script="찾으시는 지역을 선택해주세요."
+            />
             <LocationTab onClick={handleSigunCodeClick} />
             <div>
               <NaverMap list={list} onClick={handleKinderClickOnMap} />
