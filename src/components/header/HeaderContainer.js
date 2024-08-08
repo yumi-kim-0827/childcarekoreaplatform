@@ -5,49 +5,40 @@ import Header from "@/src/components/header/Header";
 //헤더의 메뉴 데이터
 const menuItems = [
   {
-    label: "시도별  찾기",
-    icon: "pi pi-box",
+    label: "어린이집",
+    icon: "pi pi-shop",
     items: [
+      {
+        items: { label: "지도 검색" },
+      },
       [
         {
-          label: "서울",
-          items: [{ label: "강남구" }, { label: "광진구" }],
+          label: "지역별",
+          items: [{ label: "서울" }, { label: "경기" }],
         },
       ],
     ],
   },
   {
-    label: "어 목록",
-    icon: "pi pi-mobile",
+    label: "유치원",
+    icon: "pi pi-shop",
     items: [
-      [
-        {
-          label: "Computer",
-          items: [
-            { label: "Monitor" },
-            { label: "Mouse" },
-            { label: "Notebook" },
-            { label: "Keyboard" },
-            { label: "Printer" },
-            { label: "Storage" },
-          ],
-        },
-      ],
+      {
+        items: { label: "지역별" },
+      },
+      {
+        items: { label: "최근 개원한 유치원" },
+      },
     ],
   },
   {
-    label: "유 목록",
+    label: "키즈카페",
     icon: "pi pi-clock",
     items: [
       [
         {
-          label: "Football",
-          items: [
-            { label: "Kits" },
-            { label: "Shoes" },
-            { label: "Shorts" },
-            { label: "Training" },
-          ],
+          label: "지역별",
+          items: [{ label: "서울" }, { label: "경기" }],
         },
       ],
     ],
