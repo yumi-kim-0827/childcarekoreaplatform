@@ -56,9 +56,7 @@ Project View : [here](https://www.childcareportal.co.kr/)
 - 📋 [https://github.com/yumi-kim-0827](https://github.com/yumi-kim-0827)
 
 ## [7] License
-
 MIT 라이센스
-###  STATE.
 © 2024 YUMEE KIM. Published with GitHub Pages
 
 <!--Url for Badges-->
