@@ -15,14 +15,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html,
 body {
   font-family: "Pretendard", sans-serif;
