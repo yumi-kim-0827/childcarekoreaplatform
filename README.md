@@ -32,7 +32,7 @@ Project View : [here](https://www.childcareportal.co.kr/)
 - Javascript
 - tailwind css
 
-# Usage
+# [3] Usage
 
 'react-color-palette'을 사용하여 컬러 선택과 상태관리를 구현하였습니다.
 
