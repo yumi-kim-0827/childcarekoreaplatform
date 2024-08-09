@@ -9,19 +9,7 @@
 
 Project View : [here](https://www.childcareportal.co.kr/)
 
-<!--목차-->
-
-## Table of Contents
-
-- [About the Project](#1-about-the-project)
-  - [Technologies](#technologies)
-- [Usage](#3-usage)
-- [Contribution](#4-contribution)
-- [Reference](#5-acknowledgement)
-- [Contact](#6-contact)
-- [License](#7-license)
-
-## [1] About the Project
+## About the Project
 
 학부모, 초보 양육자, 유치원/어린이집 선생님과 같은 보육자 등 다양한 직군에서 활용 가능하며
 투명하게 공개된 유아, 어린이, 청소년 정보를 통해 공공의 이익을 실현하고자 개발하였습니다.
@@ -32,7 +20,7 @@ Project View : [here](https://www.childcareportal.co.kr/)
 - Javascript
 - tailwind css
 
-## [3] Usage
+## Usage
 
 'react-color-palette'을 사용하여 컬러 선택과 상태관리를 구현하였습니다.
 
@@ -40,22 +28,22 @@ Project View : [here](https://www.childcareportal.co.kr/)
 
 ```
 
-## [4] Contribution
+## Contribution
 
 버그 수정에 🐞, 아이디어 제공에 💡, 새로운 기능 구현에 ✨를 사용할 수 있습니다.\*
 
 - (예시) 🐞 [YUMEEKIM](https://github.com/yumi-kim-0827): 메인페이지 버그 수정
 
-## [5] Reference
+## Reference
 
 - https://info.childcare.go.kr/info/main.jsp
 
-## [6] Contact
+## Contact
 
 - 📧 yumee0827@naver.com
 - 📋 [https://github.com/yumi-kim-0827](https://github.com/yumi-kim-0827)
 
-## [7] License
+## License
 MIT 라이센스
 © 2024 YUMEE KIM. Published with GitHub Pages
 
