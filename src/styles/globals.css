@@ -15,6 +15,20 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
 body {
-  background-color: #f7f7f7;
+  font-family: "Pretendard", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: #f7faff;
 }
