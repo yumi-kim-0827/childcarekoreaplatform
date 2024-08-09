@@ -3,7 +3,7 @@
 본 프로젝트는 Next의 주요 장점 중 하나인 폴더 및 파일 기반 페이지 라우팅과 서버 사이드 렌더링(SSR)를 통해 효율을 극대화하며 검색 엔진 최적화(SEO)에 대비한 웹 서비스입니다.
 또한 tailwind css를 사용하여 신속하고 일관된 디자인이 가능하였습니다.
 
-# 🖥️View web site
+## 🖥️ View web site
 
 <!--프로젝트 대문 이미지-->
 
@@ -11,7 +11,7 @@ Project View : [here](https://www.childcareportal.co.kr/)
 
 <!--목차-->
 
-# Table of Contents
+## Table of Contents
 
 - [About the Project](#1-about-the-project)
   - [Technologies](#technologies)
@@ -21,18 +21,18 @@ Project View : [here](https://www.childcareportal.co.kr/)
 - [Contact](#6-contact)
 - [License](#7-license)
 
-# About the Project
+## [1] About the Project
 
 학부모, 초보 양육자, 유치원/어린이집 선생님과 같은 보육자 등 다양한 직군에서 활용 가능하며
 투명하게 공개된 유아, 어린이, 청소년 정보를 통해 공공의 이익을 실현하고자 개발하였습니다.
 
-## Technologies
+### Technologies
 
 - Next js
 - Javascript
 - tailwind css
 
-# [3] Usage
+## [3] Usage
 
 'react-color-palette'을 사용하여 컬러 선택과 상태관리를 구현하였습니다.
 
@@ -40,25 +40,25 @@ Project View : [here](https://www.childcareportal.co.kr/)
 
 ```
 
-# Contribution
+## [4] Contribution
 
 버그 수정에 🐞, 아이디어 제공에 💡, 새로운 기능 구현에 ✨를 사용할 수 있습니다.\*
 
 - (예시) 🐞 [YUMEEKIM](https://github.com/yumi-kim-0827): 메인페이지 버그 수정
 
-# Reference
+## [5] Reference
 
 - https://info.childcare.go.kr/info/main.jsp
 
-# Contact
+## [6] Contact
 
 - 📧 yumee0827@naver.com
 - 📋 [https://github.com/yumi-kim-0827](https://github.com/yumi-kim-0827)
 
-# License
+## [7] License
 
 MIT 라이센스
-# STATE.
+###  STATE.
 © 2024 YUMEE KIM. Published with GitHub Pages
 
 <!--Url for Badges-->
