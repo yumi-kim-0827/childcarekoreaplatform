@@ -15,13 +15,9 @@ Project View : [here](https://www.childcareportal.co.kr/)
 
 - [[1] About the Project](#1-about-the-project)
   - [Technologies](#technologies)
-- [[2] Getting Started](#2-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
 - [[3] Usage](#3-usage)
 - [[4] Contribution](#4-contribution)
-- [[5] Acknowledgement](#5-acknowledgement)
+- [[5] Reference](#5-acknowledgement)
 - [[6] Contact](#6-contact)
 - [[7] License](#7-license)
 
@@ -35,30 +31,6 @@ Project View : [here](https://www.childcareportal.co.kr/)
 - Next js
 - Javascript
 - tailwind css
-
-# [2] Getting Started
-
-## Prerequisites
-
-- npm
-
-```bash
-npm install npm@latest -g
-```
-
-## Installation
-
-1. Repository 클론
-
-```bash
-git clone https://github.com/your-username/project-repository
-```
-
-2. NPM packages 설치
-
-```bash
-npm install
-```
 
 # [3] Usage
 
@@ -74,9 +46,9 @@ npm install
 
 - (예시) 🐞 [YUMEEKIM](https://github.com/yumi-kim-0827): 메인페이지 버그 수정
 
-# [5] Acknowledgement
+# [5] Reference
 
-- [design](https://www.behance.net/gallery/196517557/Design-System-UIUX-Design-Design-Library?tracking_source=search_projects|gradient+ui+kit&l=8)
+- https://info.childcare.go.kr/info/main.jsp
 
 # [6] Contact
 
