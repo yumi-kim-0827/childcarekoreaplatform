@@ -1,0 +1,10 @@
+/* page : HOME 메인 첫 페이지*/
+.index {
+  padding: 1rem;
+  grid-template-columns: 3fr 1fr;
+}
+/* page : Main > index */
+.main {
+  padding: 1rem;
+  grid-template-columns: 1fr 3fr;
+}
