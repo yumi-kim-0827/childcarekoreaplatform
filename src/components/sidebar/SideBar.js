@@ -3,9 +3,10 @@ import React from "react";
 import ImgButton from "@/src/components/button/ImgButton";
 
 const sideBarMenu = [
-  { src: "/img/ic_bear.svg", text: "추천글 쓰기" },
-  { src: "", text: "연령별 키즈 레시피" },
-  { src: "", text: "청소년활자원봉사" },
+  { src: "/img/ic_comment.svg", text: "추천글 쓰기" },
+  { src: "/img/ic_cook.svg", text: "키즈 레시피" },
+  { src: "/img/ic_love.svg", text: "연령별 유아 케어" },
+  { src: "/img/ic_memo.svg", text: "청소년 봉사활동 조회" },
 ];
 
 const SideBar = () => {
