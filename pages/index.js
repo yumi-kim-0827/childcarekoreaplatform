@@ -10,18 +10,27 @@ const Main = () => {
   return (
     <Layout pageCalss="index">
       <CardShelf>
-        <Section>ㄴㄴ</Section>
-      </CardShelf>
-      <CardShelf>
         <Section>
           <PageTitle pageName="홈" />
+          <SubjectTitle title="어린이집 목록" script="지도에서 찾아주세요" />
+        </Section>
+        <Section>
           <SubjectTitle
-            title="어린이집 목록"
-            script="찾으시는 지역을 선택해주세요."
+            title="최근 개원한 어린이집"
+            script="지도에서 찾아주세요"
           />
         </Section>
-        <Section></Section>
+        <Section>
+          <SubjectTitle title="키즈카페" script="지도에서 찾아주세요" />
+        </Section>
+        <Section>
+          <SubjectTitle
+            title="오늘의 키즈 레시피"
+            script="지도에서 찾아주세요"
+          />
+        </Section>
       </CardShelf>
+      <CardShelf></CardShelf>
     </Layout>
   );
 };
