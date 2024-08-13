@@ -11,7 +11,7 @@ const LocationTab = ({ onClick }) => {
       {sidoList.map((item, id) => {
         return (
           <TabPanel header={item.sido} key={id}>
-            <ul className="flex gap-4">
+            <ul className="tab-sigun-list">
               {item.sigungu.map((sigungu, id) => (
                 <li key={id}>
                   <TextButton

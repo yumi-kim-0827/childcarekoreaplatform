@@ -1,19 +1,11 @@
 import React from "react";
-import { TabView, TabPanel } from "primereact/tabview";
+import { Button } from "primereact/button";
 
 const Test = () => {
   return (
-    <TabView>
-      <TabPanel header="Tab 1">
-        <p>Content of Tab 1</p>
-      </TabPanel>
-      <TabPanel header="Tab 2">
-        <p>Content of Tab 2</p>
-      </TabPanel>
-      <TabPanel header="Tab 3">
-        <p>Content of Tab 3</p>
-      </TabPanel>
-    </TabView>
+    <div className="card flex justify-content-center">
+      <Button label="Check" icon="pi pi-check" />
+    </div>
   );
 };
 
