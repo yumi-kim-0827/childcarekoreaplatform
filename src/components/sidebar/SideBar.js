@@ -11,7 +11,7 @@ const sideBarMenu = [
 
 const SideBar = () => {
   return (
-    <div className="p-4 top-16 left-0 h-[calc(100vh-4rem)] bg-light-skyblue font-bold border-r border-dark-blue">
+    <div className="side-bar">
       <div>
         <ul className="grid grid-cols-2 gap-4">
           {sideBarMenu.map((item, id) => {

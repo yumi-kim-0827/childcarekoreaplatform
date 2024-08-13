@@ -3,7 +3,7 @@ import { MegaMenu } from "primereact/megamenu";
 
 const Header = ({ menuItems }) => {
   return (
-    <header>
+    <header className="header">
       <MegaMenu model={menuItems} breatkpoint="960px" className="bg-white" />
     </header>
   );

@@ -1,3 +1,50 @@
+/* yumee0827@naver.com */
+/* 컬러 변수 */
+$bg-white-100: #ffffff;
+$bg-white-200: #e7e7e7;
+$bg-orange-100: #ffede7;
+$bg-orange-200: #ffd9cd;
+$bg-orange-300: #ffbda7;
+$bg-orange-400: #ffae93;
+$bg-orange-500: #f57d59;
+$bg-orange-600: #ff6430;
+$bg-orange-700: #e64b18;
+
+/* 레이아웃 */
+html,
+body {
+  background-color: $bg-orange-100;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9000;
+}
+.layout {
+  display: flex;
+}
+
+.side-bar {
+  padding: 60px 10px 10px 10px;
+  max-width: 330px;
+  height: 100vh;
+  border: 1px solid $bg-orange-500;
+  background-color: $bg-orange-200;
+}
+
+.main-wrap {
+  display: grid;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $bg-white-100;
+}
+
 /* page : HOME 메인 첫 페이지*/
 .index {
   padding: 1rem;
