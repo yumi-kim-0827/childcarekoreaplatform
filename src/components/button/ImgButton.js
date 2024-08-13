@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ImgButton = ({ src, text }) => {
   return (
-    <button className="inline-block w-full min-h-[6.25rem] flex flex-col justify-between items-center gap-4">
+    <button>
       <Image
         src={src}
         alt="버튼 아이콘"

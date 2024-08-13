@@ -1,19 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* PrimeReact Theme */
+/* PrimeReact Styles */
 @import "primereact/resources/themes/lara-light-blue/theme.css";
-/* PrimeReact Core Styles */
 @import "primereact/resources/primereact.min.css";
-/* PrimeIcons */
 @import "primeicons/primeicons.css";
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
 html,
 body {
