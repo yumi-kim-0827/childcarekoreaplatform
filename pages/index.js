@@ -39,7 +39,7 @@ const Main = () => {
   };
 
   return (
-    <Layout pageCalss="index">
+    <Layout className="index">
       <CardShelf>
         <Section>
           <PageTitle pageName="홈" />

@@ -18,7 +18,8 @@ Project View : [here](https://www.childcareportal.co.kr/)
 
 - Next js
 - Javascript
-- tailwind css
+- Prime React Library
+- scss
 
 ## Usage
 
@@ -44,6 +45,7 @@ Project View : [here](https://www.childcareportal.co.kr/)
 - 📋 [https://github.com/yumi-kim-0827](https://github.com/yumi-kim-0827)
 
 ## License
+
 MIT 라이센스
 © 2024 YUMEE KIM. Published with GitHub Pages
 
@@ -68,4 +70,3 @@ MIT 라이센스
 [license-url]: LICENSE.md
 [contribution-url]: CONTRIBUTION.md
 [readme-eng-url]: ../README.md
-

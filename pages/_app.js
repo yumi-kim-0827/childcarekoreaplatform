@@ -1,5 +1,5 @@
-import "@/src/styles/globals.css";
-import "@/src/styles/custom.css";
+import "@/src/styles/globals.scss";
+import "@/src/styles/custom.scss";
 import { PrimeReactProvider } from "primereact/api";
 //components
 import HeaderContainer from "@/src/components/header/HeaderContainer";
