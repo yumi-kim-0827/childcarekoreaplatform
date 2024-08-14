@@ -1,7 +1,9 @@
 /* yumee0827@naver.com */
 /* 컬러 변수 */
-$bg-white-100: #ffffff;
-$bg-white-200: #e7e7e7;
+$bg-gray-100: #ffffff;
+$bg-gray-200: #e7e7e7;
+$bg-gray-300: #cccccc;
+$bg-gray-400: #808080;
 $bg-orange-100: #ffede7;
 $bg-orange-200: #ffd9cd;
 $bg-orange-300: #ffbda7;
@@ -27,6 +29,9 @@ $bg-orange-700: #e64b18;
 html,
 body {
   background-color: $bg-orange-100;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .header {
@@ -35,37 +40,57 @@ body {
   top: 0;
   right: 0;
   z-index: 9000;
+  height: 60px;
 }
 .layout {
+  padding: 60px 0 0 0; /* 헤더 높이만큼 여백 */
   display: flex;
 }
 
 .side-bar {
   padding: 60px 10px 10px 10px;
   max-width: 330px;
-  height: 100vh;
+  height: calc(100vh - 60px);
   border: 1px solid $bg-orange-500;
   background-color: $bg-orange-200;
 }
 
 .main-wrap {
+  padding: 20px;
+  flex: 1;
   display: grid;
 }
 
 .card {
   padding: 20px;
+  height: calc(100vh - 100px);
   border-radius: 20px;
-  background-color: $bg-white-100;
+  background-color: $bg-gray-100;
+  overflow-y: auto;
+}
+
+.card::-webkit-scrollbar {
+  width: 3px;
+}
+.card::-webkit-scrollbar-track {
+  border-radius: 6px;
+}
+.card::-webkit-scrollbar-thumb {
+  background-color: $bg-orange-200;
+  background-clip: padding-box;
+  border: 1px solid $bg-orange-300;
+  border-radius: 8px;
 }
 
 /* PAGE
 /*
 /*
 /* index */
-.index {
-  padding: 1rem;
-  grid-template-columns: 3fr 1fr;
-  border: 2px solid red;
+.page-index {
+  padding: 20px;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+  height: 100vh;
 }
 /* Main > index */
 .main {
@@ -77,7 +102,27 @@ body {
 /*
 /*
 /* LocationTab */
-.tab-sigun-list {
-  display: flex;
-  gap: 10px;
+.p-tabview {
+  .p-tabview-nav-container {
+    .p-tabview-nav {
+      .p-unselectable-text {
+        display: flex;
+        align-items: center;
+      }
+      .p-unselectable-text::after {
+        content: "";
+        width: 1px;
+        height: 15px;
+        background-color: $bg-gray-200;
+      }
+    }
+  }
+  .p-tabview-panels {
+    padding: 10px 0;
+    .tab-sigun-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
 }

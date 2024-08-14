@@ -39,7 +39,7 @@ const Main = () => {
   };
 
   return (
-    <Layout className="index">
+    <Layout pageName="page-index">
       <CardShelf>
         <Section>
           <PageTitle pageName="홈" />
@@ -69,7 +69,7 @@ const Main = () => {
           />
         </Section>
       </CardShelf>
-      <CardShelf></CardShelf>
+      <CardShelf>hh</CardShelf>
     </Layout>
   );
 };
