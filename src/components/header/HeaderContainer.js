@@ -14,7 +14,7 @@ const HeaderContainer = () => {
         {
           items: {
             label: "지도 검색",
-            command: () => router.push("/main/"),
+            command: () => router.push("/childcare/"),
           },
         },
         [
