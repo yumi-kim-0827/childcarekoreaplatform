@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <Layout pageCalss="main">
+      <Layout pageName="page-cildcare-index">
         <CardShelf>
           <Section>
             {/* <ul>
