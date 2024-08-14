@@ -33,8 +33,8 @@ const CustomTable = ({ data }) => {
 
   return (
     <>
-      <div className="flex">
-        <div className="basis-1/5">
+      <div className="custom-tabel-wrap">
+        <div>
           <DataTable value={datas}>
             <Column
               field="label"
@@ -43,7 +43,7 @@ const CustomTable = ({ data }) => {
             />
           </DataTable>
         </div>
-        <div className="basis-4/5">
+        <div className="">
           <DataTable value={datas}>
             <Column field="value" header="값" />
           </DataTable>
