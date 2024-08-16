@@ -48,10 +48,8 @@ const Main = () => {
             script="지도에서 찾아주세요"
           />
           <LocationTab onClick={handleSigunCodeClick} />
-          <div>
-            <NaverMap list={list} onClick={handleKinderClickOnMap} />
-            <TableContainer data={selectedKider} />
-          </div>
+          <NaverMap list={list} onClick={handleKinderClickOnMap} />
+          <TableContainer data={selectedKider} />
         </Section>
         <Section>
           <SubjectTitle

@@ -33,21 +33,18 @@ const CustomTable = ({ data }) => {
 
   return (
     <>
-      <div className="custom-tabel-wrap">
-        <div>
-          <DataTable value={datas}>
-            <Column
-              field="label"
-              header="기준"
-              body={(rowData) => <strong>{rowData.label}</strong>}
-            />
-          </DataTable>
-        </div>
-        <div className="">
-          <DataTable value={datas}>
-            <Column field="value" header="값" />
-          </DataTable>
-        </div>
+      <div className="table-base-style custom-tabel-wrap">
+        <DataTable value={datas}>
+          <Column
+            field="label"
+            header="기준"
+            body={(rowData) => <strong>{rowData.label}</strong>}
+          />
+        </DataTable>
+
+        <DataTable value={datas}>
+          <Column field="value" header="내용" />
+        </DataTable>
       </div>
     </>
   );

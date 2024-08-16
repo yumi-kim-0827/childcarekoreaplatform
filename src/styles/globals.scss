@@ -1,18 +1,32 @@
 /* Resetting base styles */
 @font-face {
-  font-family: "Pretendard-Regular";
-  src: url("/static/font/Pretendard-Bold.woff2") format("woff2"),
-    url("/static/font/Pretendard-Medium.woff2") format("woff2"),
-    url("/static/font/Pretendard-Regular.woff2") format("woff2");
-  font-weight: 200;
+  font-family: "NanumSquareRound", sans-serif;
+  src: url("/fonts/NanumSquareRoundL.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareRound", sans-serif;
+  src: url("/fonts/NanumSquareRoundR.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumSquareRound", sans-serif;
+  src: url("/fonts/NanumSquareRoundB.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
 html,
-body {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
-  font-family: "Pretendard", sans-serif;
+  font-family: "NanumSquareRound", sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -4,6 +4,7 @@ $bg-gray-100: #ffffff;
 $bg-gray-200: #e7e7e7;
 $bg-gray-300: #cccccc;
 $bg-gray-400: #808080;
+$bg-gray-500: #3b3b3b;
 $bg-orange-100: #ffede7;
 $bg-orange-200: #ffd9cd;
 $bg-orange-300: #ffbda7;
@@ -41,6 +42,33 @@ body {
   right: 0;
   z-index: 9000;
   height: 60px;
+  background-color: $bg-gray-100;
+  .p-megamenu {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    .p-megamenu-root-list {
+      > .p-menuitem {
+        > .p-menuitem-content {
+          .p-menuitem-link {
+            .p-menuitem-text {
+              color: $bg-gray-500;
+            }
+          }
+        }
+      }
+    }
+    .p-megamenu-panel {
+      * {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .layout {
   padding: 60px 0 0 0; /* 헤더 높이만큼 여백 */
@@ -51,7 +79,7 @@ body {
   padding: 60px 10px 10px 10px;
   max-width: 330px;
   height: calc(100vh - 60px);
-  border: 1px solid $bg-orange-500;
+  border-right: 1px solid $bg-orange-500;
   background-color: $bg-orange-200;
 }
 
@@ -59,27 +87,6 @@ body {
   padding: 20px;
   flex: 1;
   display: grid;
-}
-
-.card {
-  padding: 20px;
-  height: calc(100vh - 100px);
-  border-radius: 20px;
-  background-color: $bg-gray-100;
-  overflow-y: auto;
-}
-
-.card::-webkit-scrollbar {
-  width: 3px;
-}
-.card::-webkit-scrollbar-track {
-  border-radius: 6px;
-}
-.card::-webkit-scrollbar-thumb {
-  background-color: $bg-orange-200;
-  background-clip: padding-box;
-  border: 1px solid $bg-orange-300;
-  border-radius: 8px;
 }
 
 /* PAGE
@@ -101,6 +108,28 @@ body {
 /* COMPONENT
 /*
 /*
+/* Card */
+.card {
+  padding: 20px;
+  height: calc(100vh - 100px);
+  border-radius: 20px;
+  background-color: $bg-gray-100;
+  overflow-y: auto;
+}
+
+.card::-webkit-scrollbar {
+  width: 25px;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background-color: $bg-orange-200;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+.card::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 /* LocationTab */
 .p-tabview {
   .p-tabview-nav-container {
@@ -126,11 +155,56 @@ body {
     }
   }
 }
-/* CustomTable */
+/* Table */
+.table-base-style {
+  font-size: 16px;
+  border-top: 2px solid $bg-gray-200;
+}
+
+.table-base-style {
+  tr {
+    td {
+      font-size: 14px;
+    }
+  }
+}
 .custom-tabel-wrap {
   display: flex;
 }
+.custom-tabel-wrap {
+  > div:first-child {
+    flex-basis: 20%;
+  }
+}
+.custom-tabel-wrap {
+  > div:last-child {
+    flex: 1;
+  }
+}
+.p-datatable {
+  .p-datatable-tbody {
+    tr {
+      td {
+        border: 1px dashed $bg-gray-200;
+        border-width: 0 0 1px 0;
+      }
+    }
+  }
+}
 /* PageTitle */
-.text-title-large {
-  font-size: 30px;
+.page-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+/* SubjectTitle */
+.section-title {
+  padding-top: 20px;
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: $bg-orange-500;
+  }
+  p {
+    color: $bg-gray-400;
+  }
 }
