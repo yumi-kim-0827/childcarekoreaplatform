@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-const ImgButton = ({ src, text }) => {
+const ImgButton = ({ src, text, onClick }) => {
   return (
-    <button className="img-btn">
+    <button className="img-btn" onClick={onClick}>
       <Image
         src={src}
         alt="버튼 아이콘"
