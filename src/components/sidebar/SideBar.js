@@ -12,8 +12,8 @@ const sideBarMenu = [
 const SideBar = () => {
   return (
     <div className="side-bar">
-      <div>
-        <ul className="grid grid-cols-2 gap-4">
+      <div className="best-menu">
+        <ul className="best-menu-list">
           {sideBarMenu.map((item, id) => {
             return (
               <li key={id}>

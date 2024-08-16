@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ImgButton = ({ src, text }) => {
   return (
-    <button>
+    <button className="img-btn">
       <Image
         src={src}
         alt="버튼 아이콘"
@@ -11,7 +11,7 @@ const ImgButton = ({ src, text }) => {
         height={50}
         className="inline-block"
       />
-      <p className="text-base">{text}</p>
+      <p className="img-btn-text">{text}</p>
     </button>
   );
 };
