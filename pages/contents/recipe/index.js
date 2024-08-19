@@ -14,6 +14,7 @@ const Main = () => {
   const [oneYearRecipes, setOneYearRecipes] = useState([]);
   const [twoYearRecipes, setTwoYearRecipes] = useState([]);
   const [threeYearRecipes, setThreeYearRecipes] = useState([]);
+  const [fourYearRecipes, setFourYearRecipes] = useState([]);
 
   const fetchRecipe = async () => {
     try {
@@ -26,6 +27,7 @@ const Main = () => {
       setOneYearRecipes(recipes[0].oneyear);
       setTwoYearRecipes(recipes[1].twoyear);
       setThreeYearRecipes(recipes[2].threeyear);
+      setFourYearRecipes(recipes[3].fouryear);
     } catch (error) {
       console.log(error);
     }
@@ -101,7 +103,7 @@ const Main = () => {
             title="만 1세"
             script="만 1세 유아를 위한 간편 요리 레시피"
           />
-          <Accordion activeIndex={0}>
+          <Accordion>
             {oneYearRecipes.map((item, id) => {
               return (
                 <AccordionTab header={item.name} key={id}>
@@ -133,7 +135,7 @@ const Main = () => {
             title="만 2세"
             script="만 2세 유아를 위한 간편 요리 레시피"
           />
-          <Accordion activeIndex={0}>
+          <Accordion>
             {twoYearRecipes.map((item, id) => {
               return (
                 <AccordionTab header={item.name} key={id}>
@@ -165,8 +167,40 @@ const Main = () => {
             title="만 3세"
             script="만 3세 유아를 위한 간편 요리 레시피"
           />
-          <Accordion activeIndex={0}>
+          <Accordion>
             {threeYearRecipes.map((item, id) => {
+              return (
+                <AccordionTab header={item.name} key={id}>
+                  <div className="ingredients">
+                    <p>재료</p>
+                    <div className="tag-wrap">
+                      <ul>
+                        {item.ingredients.map((item, id) => {
+                          return <li key={id}>{item}</li>;
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="instructions">
+                    <h3>레시피</h3>
+                    <ol>
+                      {item.instructions.map((item, id) => {
+                        return <li key={id}>{item}</li>;
+                      })}
+                    </ol>
+                  </div>
+                </AccordionTab>
+              );
+            })}
+          </Accordion>
+        </Section>
+        <Section>
+          <SubjectTitle
+            title="만 4세"
+            script="만 4세 유아를 위한 간편 요리 레시피"
+          />
+          <Accordion>
+            {fourYearRecipes.map((item, id) => {
               return (
                 <AccordionTab header={item.name} key={id}>
                   <div className="ingredients">

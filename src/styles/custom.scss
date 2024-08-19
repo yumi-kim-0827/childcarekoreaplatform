@@ -105,14 +105,13 @@ body {
 /*
 /* index */
 .page-index {
-  padding: 20px;
   grid-template-columns: 4fr 1fr;
   gap: 20px;
   height: 100vh;
 }
 /* /childcare */
 .page-cc-index {
-  padding: 1rem;
+  gap: 20px;
   grid-template-columns: 4fr 1fr;
 }
 
