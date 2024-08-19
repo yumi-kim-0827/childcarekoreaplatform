@@ -154,10 +154,19 @@ body {
 /* LocationTab */
 .p-tabview {
   .p-tabview-nav-container {
+    padding: 10px;
+    border: 1px solid $bg-gray-200;
     .p-tabview-nav {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      border: 0;
       .p-unselectable-text {
         display: flex;
         align-items: center;
+        .p-tabview-nav-link {
+          border: 0;
+        }
       }
       .p-unselectable-text::after {
         content: "";
