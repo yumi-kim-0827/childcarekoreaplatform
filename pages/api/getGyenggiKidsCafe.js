@@ -1,15 +1,15 @@
-// pages/api/getTotalKdList.js
-// 전국 어린이집 fetch
+// pages/api/getGyenggiKidsCafe.js
+// 경기도 키즈카페 fetch
 import { parseStringPromise } from "xml2js";
 
-export default async function getTotalKdList(req, res) {
-  const KD_URI = process.env.NEXT_PUBLIC_IP_KD_URI;
+export default async function getTotalGyeonggiKidsCafe(req, res) {
+  const GYENGGI_KIDSCAFE_URI = process.env.NEXT_PUBLIC_NCP_GYENGGI_ID;
 
   if (req.method === "GET") {
-    const { arcode } = req.query; // 쿼리 파라미터에서 arcode 값을 가져옴
     try {
-      const response = await fetch(`${KD_URI}&arcode=${arcode}`);
-
+      const response = await fetch(
+        `https://openapi.gg.go.kr/Kidscafe?KEY=${GYENGGI_KIDSCAFE_URI}&pIndex=1&pSize=300`
+      );
       // 응답의 Content-Type 헤더를 확인
       const contentType = response.headers.get("content-type");
 

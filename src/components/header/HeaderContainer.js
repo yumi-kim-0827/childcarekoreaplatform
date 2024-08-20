@@ -37,15 +37,20 @@ const HeaderContainer = () => {
     },
     {
       label: "키즈카페",
-      icon: "pi pi-clock",
+      icon: "pi pi-shop",
       items: [
         {
-          label: "지도 검색",
-          command: () => router.push("/kidscafe/"),
+          label: "전체 리스트",
+          items: [
+            {
+              label: "전국 키즈카페",
+              command: () => router.push("/kidscafe/"),
+            },
+          ],
         },
         {
           label: "지역별",
-          items: [{ label: "서울" }, { label: "경기" }, { label: "부산" }],
+          items: [{ label: "서울" }, { label: "경기" }],
         },
       ],
     },
