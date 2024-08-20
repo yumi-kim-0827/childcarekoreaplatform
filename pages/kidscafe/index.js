@@ -8,6 +8,8 @@ import ListGroup from "@/src/components/list/ListGroup";
 
 const Main = () => {
   const [gyenggiKidsCafe, setGyenggiKidsCafe] = useState([]);
+  const [BusanKidsCafe, setBusanKidsCafe] = useState([]);
+  //경기 키즈카페 리스트 fetch
   const fetchGyeonggiKidsCafeList = async () => {
     try {
       const response = await fetch("/api/getGyenggiKidsCafe");
@@ -20,6 +22,18 @@ const Main = () => {
   };
   useEffect(() => {
     fetchGyeonggiKidsCafeList();
+  }, []);
+  //부산 키즈카페 리스트 fetch
+  const fetchBusanKidsCafeList = async () => {
+    try {
+      const response = await fetch("/api/getBusanKidsCafe");
+      const data = await response.json();
+      const items = data.response.body[0].items[0].item;
+      setBusanKidsCafe(items);
+    } catch (error) {}
+  };
+  useEffect(() => {
+    fetchBusanKidsCafeList();
   }, []);
 
   return (
@@ -36,6 +50,20 @@ const Main = () => {
               propertyName1="BIZPLC_NM"
               propertyName2="REFINE_LOTNO_ADDR"
               propertyName3="BSN_STATE_NM"
+            />
+          ) : null}
+        </Section>
+        <Section>
+          <SubjectTitle
+            title="부산 키즈카페 목록"
+            script="부산에 위치한 키즈카페입니다."
+          />
+          {BusanKidsCafe && BusanKidsCafe.length > 0 ? (
+            <ListGroup
+              list={BusanKidsCafe}
+              propertyName1="cafe_nm"
+              propertyName2="road_nm"
+              propertyName3="tel_no"
             />
           ) : null}
         </Section>

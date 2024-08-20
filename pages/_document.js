@@ -17,6 +17,10 @@ export default function Document() {
         <meta property="og:url" content="https://www.childcareportal.co.kr/" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-9192184133511809"
+        ></meta>
       </Head>
       <body>
         <Main />

@@ -5,8 +5,6 @@ import { classNames } from "primereact/utils";
 const ListGroup = ({ list, propertyName1, propertyName2, propertyName3 }) => {
   const [lists, setLists] = useState([]);
 
-  console.log(list);
-
   useEffect(() => {
     setLists(list);
   }, []);
