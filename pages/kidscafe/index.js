@@ -28,10 +28,15 @@ const Main = () => {
         <Section>
           <SubjectTitle
             title="경기도 키즈카페 목록"
-            script="지도에서 찾아주세요"
+            script="경기도에 위치한 키즈카페입니다."
           />
           {gyenggiKidsCafe && gyenggiKidsCafe.length > 0 ? (
-            <ListGroup list={gyenggiKidsCafe} propertyName1="BIZPLC_NM" />
+            <ListGroup
+              list={gyenggiKidsCafe}
+              propertyName1="BIZPLC_NM"
+              propertyName2="REFINE_LOTNO_ADDR"
+              propertyName3="BSN_STATE_NM"
+            />
           ) : null}
         </Section>
       </CardShelf>

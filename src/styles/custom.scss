@@ -269,3 +269,33 @@ body {
     }
   }
 }
+/* ListGroup */
+.list-group-wrap {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $bg-gray-200;
+  &:hover {
+    color: $bg-orange-500;
+    .list-tag {
+      color: #fff;
+      background-color: $bg-orange-500;
+    }
+  }
+  & > div {
+    flex: 1;
+  }
+  .list-text {
+    font-size: 14px;
+  }
+  .list-tag {
+    flex: none;
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+    background-color: $bg-gray-200;
+    border-radius: 6px;
+    border: 1px solid $bg-gray-300;
+  }
+}
