@@ -77,15 +77,14 @@ body {
 
 .side-bar {
   padding: 20px;
-  min-width: 240px;
-  max-width: 330px;
+  width: 100px;
   height: calc(100vh - 60px);
   border-right: 1px solid $bg-orange-500;
   background-color: $bg-orange-200;
   .best-menu {
     .best-menu-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
       gap: 10px;
       li {
         text-align: center;
