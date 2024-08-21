@@ -88,6 +88,10 @@ body {
       gap: 10px;
       li {
         text-align: center;
+        button {
+          display: block;
+          width: 100%;
+        }
       }
     }
   }

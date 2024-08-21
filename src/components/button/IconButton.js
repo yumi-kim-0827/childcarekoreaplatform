@@ -1,9 +1,9 @@
 import React from "react";
 
-const IconButton = ({ icon, text, onClick }) => {
+const IconButton = ({ icon, color, text, onClick }) => {
   return (
     <button className="img-btn" onClick={onClick}>
-      <i className={icon}></i>
+      <i className={`pi ${icon}`} style={{ color: color }}></i>
       <p className="img-btn-text">{text}</p>
     </button>
   );

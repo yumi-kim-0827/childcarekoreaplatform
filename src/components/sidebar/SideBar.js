@@ -29,6 +29,7 @@ const SideBar = () => {
                 <IconButton
                   icon={item.icon}
                   text={item.text}
+                  color="#fff"
                   onClick={item.onClick}
                 />
               </li>
