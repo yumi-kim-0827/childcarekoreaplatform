@@ -57,7 +57,7 @@ const Main = () => {
           />
         </Section>
         <Section>
-          <SubjectTitle title="키즈카페" script="지도에서 찾아주세요" />
+          <SubjectTitle title="경기도 키즈카페" script="지도에서 찾아주세요" />
         </Section>
         <Section>
           <SubjectTitle

@@ -5,24 +5,29 @@ import CardShelf from "@/src/components/layout/CardShelf";
 import Section from "@/src/components/layout/Section";
 import SubjectTitle from "@/src/components/layout/SubjectTitle";
 import ListGroup from "@/src/components/list/ListGroup";
+import LocationTab from "@/src/components/tab/LocationTab";
 
 const Main = () => {
   const [gyenggiKidsCafe, setGyenggiKidsCafe] = useState([]);
   const [BusanKidsCafe, setBusanKidsCafe] = useState([]);
+
   //경기 키즈카페 리스트 fetch
   const fetchGyeonggiKidsCafeList = async () => {
     try {
       const response = await fetch("/api/getGyenggiKidsCafe");
       const data = await response.json();
       const list = data.Kidscafe.row;
+      console.log(list);
       setGyenggiKidsCafe(list);
     } catch (error) {
       console.error(error);
     }
   };
+
   useEffect(() => {
     fetchGyeonggiKidsCafeList();
   }, []);
+
   //부산 키즈카페 리스트 fetch
   const fetchBusanKidsCafeList = async () => {
     try {
@@ -32,6 +37,7 @@ const Main = () => {
       setBusanKidsCafe(items);
     } catch (error) {}
   };
+
   useEffect(() => {
     fetchBusanKidsCafeList();
   }, []);
@@ -44,6 +50,7 @@ const Main = () => {
             title="경기도 키즈카페 목록"
             script="경기도에 위치한 키즈카페입니다."
           />
+          <LocationTab sidoName="경기도" sodiListIdx={4} />
           {gyenggiKidsCafe && gyenggiKidsCafe.length > 0 ? (
             <ListGroup
               list={gyenggiKidsCafe}
